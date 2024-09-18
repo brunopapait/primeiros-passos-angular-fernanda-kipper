@@ -1,1 +1,28 @@
-<app-footer>Footer mano</app-footer>
+<app-footer></app-footer>
+
+
+{{name}}
+
+<img [src]="urlDog" alt="Imagem do cachorro">
+
+<button (click)="logs()">Clique aqui</button>
+<label for="">{{counter}}</label>
+
+<div>
+  <label for="inputData">Digite algo: </label>
+  <input id="inputData" type="text" [(ngModel)]="inputValue" (input)="capturarValorInput($event)" />
+</div>
+
+<p>Você digitou: {{ inputValue }}</p>
+
+<p *ngIf="inputValue.length > 9; else outroTexto;">O número é maior que 9!</p>
+
+
+<ng-template #outroTexto>
+  <p *ngIf="inputValue.length > 5; else outroTexto;">Este é o texto alternativo que aparece com mostrarTexto = false.
+  </p>
+</ng-template>
+
+<ng-template #outroTexto1>
+  <p>Este é o texto alternativo que aparece com mostrarTexto = true.</p>
+</ng-template>
