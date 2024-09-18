@@ -1,0 +1,19 @@
+#fetch {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+  background-color: blue;
+  border-radius: 18px;
+  color: white;
+  font-size: large;
+  padding: 20px;
+}
+
+.wrapper-buttons-fetch {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+  gap: 20px;
+}
