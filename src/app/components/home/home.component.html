@@ -26,3 +26,15 @@
 <ng-template #outroTexto1>
   <p>Este é o texto alternativo que aparece com mostrarTexto = true.</p>
 </ng-template>
+
+@if (inputValue.length > 9) {
+<p>O número é maior que 9!</p>
+} @else {
+<p>O número é menor que 9!</p>
+}
+
+@for (item of lista; track item) {
+<p>{{ item }}</p>
+} @empty {
+<p>Não há itens na lista.</p>
+}
