@@ -16,6 +16,8 @@ export class HomeComponent {
   urlDog: string = 'https://cdn.pixabay.com/photo/2023/08/18/15/02/dog-8198719_640.jpg';
   inputValue: string = '';
 
+  lista: string[] = ['Item 1', 'Item 2', 'Item 3', 'Item 4', 'Item 5'];
+
   logs() {
     this.name = `${this.name} - ${this.counter++}`;
   }
